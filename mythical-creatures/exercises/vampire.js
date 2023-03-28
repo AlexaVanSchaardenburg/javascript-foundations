@@ -9,11 +9,6 @@ var vampire = {
 return vampire
 }
 
-// function encounterDeliciousVictim(vampire){
-//   var expectedResponse = vampire.shout
-//   return expectedResponse
-// }
-
 function encounterDeliciousVictim(vampire){
   if (vampire.thirsty === false){
     var response = 'No thanks, I am too full.'

@@ -5,7 +5,6 @@ function createDragon(name, rider, temperment) {
     temperment: temperment,
     timesEaten: 0,
     hungry: true
-
   }
   return dragon;
 }
