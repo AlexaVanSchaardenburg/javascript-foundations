@@ -28,11 +28,6 @@ function getRing(hobbit){
   }
 }
 
-// function meetPeople(hobbit, people){
-//   hobbit.acquaintances.push(people)
-//   return hobbit
-// }
-
 function meetPeople(hobbit, people){
   for (var i=0; i<people.length; i++){
     hobbit.acquaintances.push(people[i])
