@@ -17,8 +17,15 @@ function createLevel(name, players){
     return level
 }
 
-function findCoins(){
-    level.coins 
+function findCoins(level, newCoins){
+    updatedLevel = {
+        coins: level.coins + newCoins,
+        lives: level.lives
+    }
+    if (newCoins >= 100){
+        updatedLevel.lives += 1
+    }
+    return updatedLevel
 }
 
 module.exports = { 
