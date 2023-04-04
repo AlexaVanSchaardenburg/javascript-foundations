@@ -23,13 +23,23 @@ function findCoins(level, newCoins){
         lives: level.lives
     }
     if (newCoins >= 100){
-        updatedLevel.lives += 1
+        level.lives += 1
     }
     return updatedLevel
+}
+
+function defeatPlayer(level){
+  if (level.lives === 1) {
+        return 'GAME OVER'
+    } else {
+       level.lives -= 1
+       return level
+    }
 }
 
 module.exports = { 
     createPlayer,
     createLevel,
-    findCoins
+    findCoins,
+    defeatPlayer
 };
