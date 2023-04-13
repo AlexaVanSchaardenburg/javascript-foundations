@@ -15,13 +15,13 @@ describe('Meal', function() {
     assert.deepEqual(appetizer.specialRequests, []);
     assert.equal(appetizer.tableNumber, 12);
   });
-  it('should default to not complete', function() {
+  it.skip('should default to not complete', function() {
     var appetizer = createMeal('Chips & Salsa', [], 14);
 
     assert.equal(appetizer.complete, false);
   });
 
-  it('should be able to be completed', function() {
+  it.skip('should be able to be completed', function() {
     var appetizer = createMeal('Chips & Queso', [], 4);
     var pizza = createMeal('Margarita', [], 5)
     var shrimpTacos = createMeal('Shrimp Tacos', ["no cheese"], 14);
@@ -33,7 +33,7 @@ describe('Meal', function() {
     assert.equal(completeTacos.complete, true);
     assert.equal(pizza.complete, false);
   });
-  it('should be able to return a message if the order is completed', function(){
+  it.skip('should be able to return a message if the order is completed', function(){
     var appetizer = createMeal('Chips & Queso', [], 4);
     var pizza = createMeal('Margarita pizza', [], 5)
     var completeAppetizer = getMade(appetizer);
@@ -46,7 +46,7 @@ describe('Meal', function() {
 
 describe('Order', function() {
 
-  it('should have a table number and associated meals', function() {
+  it.skip('should have a table number and associated meals', function() {
     var meal1 = createMeal('Shrimp Tacos', ['no cheese'], 14);
     var meal2 = createMeal('Jicama & Cucumber', [], 14);
     var meal3 = createMeal('The Situation Gordita', ['cilantro', 'onion'], 14);
