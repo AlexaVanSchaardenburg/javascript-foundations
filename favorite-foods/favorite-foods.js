@@ -16,13 +16,6 @@ function commentOnSpiciness(dish){
     }
 }
 
-// function orderFood(dish){
-//     var orderedDish = {
-//         timesOrdered: 1
-//     }
-//     return orderedDish
-// }
-
 function orderFood(dish){
     dish.timesOrdered += 1
     return dish
